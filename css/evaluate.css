@@ -1,0 +1,164 @@
+body {
+    font-family: Arial,sans-serif !important;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+@media(max-width:480px){
+	.col-md-5 { display:none; }
+}
+
+@media(max-width:480px){
+	.col-md-7 { width:100%; }
+}
+
+div.wrapper {
+    padding: 0 0;
+}
+div.relative {
+    position: relative;
+}
+div.wrap_header {
+    background: #12a2d6;
+}
+.relative {
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+.fixbox {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+div.logo {
+    position: relative;
+    margin-top: 0;
+    height: 100px;
+}
+.fl {
+    float: left;
+}
+div.logo img {
+    max-height: 100px;
+   
+    margin-left: 0;
+}
+.row .linfologin {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+	
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 150%;
+}
+.r3_counter_box {
+    padding: 10px 10px;
+	min-height: 80px; /*100px*/
+    background: #e6f0fc;
+	border-radius: 5px;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    
+}
+.r3_counter_box .fa {
+    font-size: 23px;
+    width: 60px;
+    height: 60px;
+    line-height: 0px;
+}
+
+@media(max-width:480px){
+.r3_counter_box .fa {
+    font-size: 15px;
+    width: 15%;
+    height: 15%;
+    line-height: 40px;
+}
+}
+
+.fa.pull-left {
+    margin-right: 2% !important;
+}
+.clear20, #clear20 {
+    clear: both;
+    font-size: 0 !important;
+    height: 20px;
+}
+.camnhan{
+	
+	margin-bottom:5px;
+}
+.r3_counter_box {
+    margin: 5px 0 5px 0;
+    color: #4c64ea;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+
+   h5 {
+      font-size: 1.8em;
+   }
+}
+
+.hinhanh{
+	width:60%;
+    padding: 7px 10px;
+	min-height: 80px;
+    background: #fafafa;
+	
+   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:15px;
+}
+
+.hinhanh img{
+	padding:10px;
+}
+button{
+	background-color:transparent;
+	border: none;
+}
+.stats{
+	float:left !important;
+}
+
+.block_tientip {
+border:none;
+color:#6f6f6f;
+font-size:14px;
+float:left;
+width:100%;
+display: block; 
+position: relative;
+}
+
+@media(max-width:480px){
+.block_tientip {
+border:none;
+color:#6f6f6f;
+font-size:10px;
+float:left;
+width:100%;
+display: block; 
+position: relative;
+overflow-wrap: break-word;
+}
+}
+
+input[type="radio"]:checked+label 
+{ 
+	font-weight: bold; 
+	margin-left: 20px;
+}
