@@ -323,6 +323,11 @@ if ($action=="remove-all")
     margin-bottom: 15px;
   }
 }
+
+.btn.btn-warning + div
+{
+margin-top: 20px;
+}
 </style>
 </head>
 <body>
