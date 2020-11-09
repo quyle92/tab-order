@@ -197,13 +197,33 @@ if ($action=="remove-all")
 <html>
 <head>
 <?php include("head-tag.php"); ?>
+<!-- Bootstrap iOS toggle https://www.bootstraptoggle.com/ -->
+
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 <script>
   $(document).ready(function () {
   	$.noConflict();
       $('select').selectize({
           sortField: 'text'
       });
+
+     $("#checkAll").change(function() {
+  if ($(this).is(":checked")) {console.log("on");
+      $('input.food_item').bootstrapToggle('on');
+  }
+
+  if (!$(this).is(":checked")) {console.log("off");
+      $('input.food_item').bootstrapToggle('off');
+  }
+});
+
+
   });
+  
+
+
 </script>
 <style> 
 
@@ -574,7 +594,7 @@ if ($action=="remove-all")
 									<i class="fa fa-trash-o"></i>
 									<input type="hidden" name="maban" value="<?=$maban;?>" />
 								</button>
-								<input type="checkbox" id="checkAll">
+								<input type="checkbox" id="checkAll" data-toggle="toggle" data-size="mini"  >
 							</td>
 							<td class="col-md-12" style="width: 30%">Tên Sản Phẩm</td>
 							<td class="text-center soluong" style="width: 30%">SL</td>
@@ -778,7 +798,7 @@ if ($action=="remove-all")
 ?>
 				<tr>
 					<td class="text-center">
-						<input type="checkbox" name="id_arr[]" value="<?=$mahangban?>" />
+						<input type="checkbox" class="food_item" name="id_arr[]" value="<?=$mahangban?>" data-toggle="toggle" data-size="mini"/>
 					</td>
 					<td class="col-md-12">
 						<div class="media">
@@ -1004,9 +1024,10 @@ $('.navbar-toggle').on('click', function() {
   });
 </script>
 <script>
-		$("#checkAll").click(function () {
-     $('input:checkbox').prop('checked', this.checked);
- });
+		// $("#checkAll").click(function () {
+     // $('input:checkbox').prop('checked', this.checked);console.log($('input:checkbox'));
+ // });
+
 </script>
 <script>
 	$("#checkThemMonSetMenu").click(function () {
